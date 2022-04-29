@@ -4,18 +4,38 @@ import { FaFacebookF } from "react-icons/fa";
 
 const SocialMedia = () => (
   <div className="app__social">
-    <div>
-      <BsTwitter onClick={()=> window.open("https://twitter.com/JanakaP65325099", '_blank')}/>
-    </div>
-    <div>
-      <FaFacebookF onClick={()=> window.open("https://www.facebook.com/jcscorpio", '_blank')}/>
-    </div>
-    <div>
-      <BsInstagram onClick={()=> window.open("https://www.instagram.com/jc.perera", '_blank')}/>
-    </div>
-    <div>
-      <BsGithub onClick={()=> window.open("https://github.com/JcPerera", '_blank')}/>
-    </div>
+    <a
+      href="https://twitter.com/JanakaP65325099"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <div>
+        <BsTwitter />
+      </div>
+    </a>
+    <a
+      href="https://www.facebook.com/jcscorpio"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <div>
+        <FaFacebookF />
+      </div>
+    </a>
+    <a
+      href="https://www.instagram.com/jc.perera"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <div>
+        <BsInstagram />
+      </div>
+    </a>
+    <a href="https://github.com/JcPerera" target="_blank" rel="noreferrer">
+      <div>
+        <BsGithub />
+      </div>
+    </a>
   </div>
 );
 
